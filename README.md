@@ -1,32 +1,118 @@
-# YouTube Home Page - Masquer les vidéos à faible vue
+# YouTube CleanFeed
 
-Un userscript pour **YouTube** qui **masque automatiquement les vidéos ayant moins de 5000 vues sur la page d'accueil**, tout en restant compatible avec la **navigation SPA** (Single Page Application) de YouTube.
-
----
-
-## ⚡ Fonctionnalités
-
-- Masque les vidéos dont le nombre de vues est inférieur à **5000**.
-- Fonctionne uniquement sur la **page d'accueil** (`/`).
-- Compatible avec la navigation SPA de YouTube (pas besoin de rafraîchir la page).
-- Se réapplique automatiquement lors du scroll ou du chargement de nouvelles vidéos.
-- Ne touche pas aux autres pages (Abonnements, Recherche, Vidéos individuelles).
+🇫🇷 🇬🇧 🇩🇪 🇪🇸  
+Un filtre intelligent pour nettoyer votre feed YouTube.
 
 ---
 
-## 🛠️ Installation
-
-1. Installer [Tampermonkey](https://www.tampermonkey.net/) ou [Greasemonkey](https://www.greasespot.net/) dans votre navigateur.
-2. Créer un **nouveau script** dans l’extension.
-3. Copier-coller le contenu du script dans l’éditeur.
-4. Enregistrer et activer le script.
-5. Rechargez YouTube pour tester.
+## 🌍 Languages / Langues
+- Français
+- English
+- Deutsch
+- Español
 
 ---
 
-## 🔧 Configuration
+## 🇫🇷 Français
 
-- Le seuil de vues est défini par la constante `MIN_VIEWS` dans le script :
+### ✨ Description
+**YouTube CleanFeed** est un userscript Tampermonkey qui masque automatiquement :
+- les vidéos peu populaires
+- les lives avec peu de spectateurs  
 
-```javascript
-const MIN_VIEWS = 5000;
+Il fonctionne :
+- sur la **page d’accueil**
+- sur les **recommandations** d’une vidéo  
+- avec la navigation **SPA** de YouTube (sans rechargement)
+
+### 🧠 Fonctionnalités
+- Filtrage par nombre de vues
+- Filtrage des lives par nombre de spectateurs
+- Boutons contextuels (Accueil / Vidéo)
+- Menu Tampermonkey avec notifications toast
+- Multilingue automatique
+- Performances optimisées (observers ciblés)
+
+### ⚙️ Installation
+1. Installer Tampermonkey
+2. Créer un nouveau script
+3. Coller le code du script
+4. Sauvegarder
+
+---
+
+## 🇬🇧 English
+
+### ✨ Description
+**YouTube CleanFeed** is a Tampermonkey userscript that automatically hides:
+- low-popularity videos
+- live streams with few viewers  
+
+It works on:
+- the **Home page**
+- **Watch** recommendations  
+- fully supports YouTube’s **SPA navigation**
+
+### 🧠 Features
+- View-count filtering
+- Live viewer filtering
+- Contextual buttons (Home / Watch)
+- Tampermonkey menu with toast notifications
+- Automatic multi-language support
+- Optimized performance (scoped observers)
+
+---
+
+## 🇩🇪 Deutsch
+
+### ✨ Beschreibung
+**YouTube CleanFeed** blendet automatisch:
+- wenig beliebte Videos
+- Livestreams mit wenigen Zuschauern aus  
+
+Unterstützt:
+- die **Startseite**
+- Video-Empfehlungen
+- YouTubes **SPA-Navigation**
+
+### 🧠 Funktionen
+- Filter nach Aufrufen
+- Filter für Livestream-Zuschauer
+- Kontextuelle Buttons
+- Tampermonkey-Menü mit Benachrichtigungen
+- Mehrsprachig
+- Sehr performant
+
+---
+
+## 🇪🇸 Español
+
+### ✨ Descripción
+**YouTube CleanFeed** oculta automáticamente:
+- videos con pocas vistas
+- directos con pocos espectadores  
+
+Funciona en:
+- la **página de inicio**
+- recomendaciones de videos
+- navegación **SPA** de YouTube
+
+### 🧠 Funcionalidades
+- Filtro por número de vistas
+- Filtro de directos por espectadores
+- Botones contextuales
+- Menú Tampermonkey con notificaciones
+- Multilenguaje automático
+- Alto rendimiento
+
+---
+
+## 🧩 Compatibilidad
+- Tampermonkey
+- YouTube Desktop
+- Chromium / Firefox
+
+---
+
+## 📄 Licence
+MIT
