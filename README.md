@@ -1,7 +1,13 @@
-# YouTube CleanFeed
+# YouTube CleanFeed 🇫🇷 🇬🇧 🇩🇪 🇪🇸  
 
-🇫🇷 🇬🇧 🇩🇪 🇪🇸  
-Un filtre intelligent pour nettoyer votre feed YouTube.
+
+🇫🇷 Un filtre intelligent pour nettoyer votre feed YouTube.
+
+🇬🇧 A smart filter to clean up your YouTube feed.
+
+🇩🇪 Ein intelligenter Filter zur Bereinigung deines YouTube-Feeds.
+
+🇪🇸 Un filtro inteligente para limpiar tu feed de YouTube.
 
 ---
 
