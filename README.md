@@ -107,7 +107,7 @@ Funciona en:
 
 ---
 
-## 🧩 Compatibilidad
+## 🧩 Compatibility
 - Tampermonkey
 - YouTube Desktop
 - Chromium / Firefox
