@@ -5,6 +5,8 @@
 // @version      6.3.0
 // @description  Hide Shorts (Home/Search/Sidebar) + hide News on Home + optional block Shorts page + low-popularity filter (Home + Watch). Unified i18n, unified toasts, categorized Tampermonkey menu, SPA-compatible, Eco/Perf modes. Includes dock buttons with Collapse/Expand (Home + Watch), fullscreen auto-hide with delayed restore (10s perf / 30s eco), anti-flicker dock rendering, de-duped SPA nav on /watch. + Optional "Hide header when not hovered" on /watch (menu + dock button).
 // @homepageURL  https://github.com/Raph563/-YouTube_CleanFeed_-_Remove_Low_Views_Videos
+// @downloadURL https://raw.githubusercontent.com/Raph563/-YouTube_CleanFeed_-_Remove_Low_Views_Videos/main/usercript.js
+// @updateURL   https://raw.githubusercontent.com/Raph563/-YouTube_CleanFeed_-_Remove_Low_Views_Videos/main/usercript.js
 // @match        https://www.youtube.com/*
 // @run-at       document-start
 // @grant        GM_getValue
