@@ -53,7 +53,7 @@
       status_on: "ON",
       status_off: "OFF",
 
-      dock_collapse: "Ranger 🧹",
+      dock_collapse: "Ranger ▼",
       dock_expand: "Paramètre ▲",
       dock_shorts_show: "Afficher Shorts",
       dock_shorts_hide: "Masquer Shorts",
@@ -119,10 +119,13 @@
       dock_menu_home_label: "Fonctionnalités Accueil",
       dock_menu_home_title: "Fonctionnalités Accueil :",
       dock_menu_home_info: "Réglages spécifiques à l'accueil (Shorts, News, vidéos peu populaires).",
+      dock_menu_watch_label: "Fonctionnalités Vidéo",
+      dock_menu_watch_title: "Fonctionnalités Vidéo :",
+      dock_menu_watch_info: "Réglages spécifiques à la page vidéo (/watch).",
       dock_menu_adv_label: "Avancé",
       dock_menu_adv_title: "Avancé :",
       dock_menu_adv_info: "Options avancées du dock (visibilité, etc.).",
-      dock_menu_back: "Retour",
+      dock_menu_back: "Retour ◀️",
 
       dock_mode_state_perf: "Mode : Performance",
       dock_mode_state_eco: "Mode : Économie",
@@ -190,7 +193,7 @@
       status_on: "ON",
       status_off: "OFF",
 
-      dock_collapse: "Collapse 🧹",
+      dock_collapse: "Collapse ▼",
       dock_expand: "Settings ▲",
       dock_shorts_show: "Show Shorts",
       dock_shorts_hide: "Hide Shorts",
@@ -256,10 +259,13 @@
       dock_menu_home_label: "Home Features",
       dock_menu_home_title: "Home Features:",
       dock_menu_home_info: "Home-specific settings (Shorts, News, low-pop videos).",
+      dock_menu_watch_label: "Video Features",
+      dock_menu_watch_title: "Video Features:",
+      dock_menu_watch_info: "Video page settings (/watch).",
       dock_menu_adv_label: "Advanced",
       dock_menu_adv_title: "Advanced:",
       dock_menu_adv_info: "Advanced dock options (visibility, etc.).",
-      dock_menu_back: "Back",
+      dock_menu_back: "Back ◀️",
 
       dock_mode_state_perf: "Mode: Performance",
       dock_mode_state_eco: "Mode: Saver",
@@ -327,7 +333,7 @@
       status_on: "EIN",
       status_off: "AUS",
 
-      dock_collapse: "Einklappen 🧹",
+      dock_collapse: "Einklappen ▼",
       dock_expand: "Einstellungen ▲",
       dock_shorts_show: "Shorts anzeigen",
       dock_shorts_hide: "Shorts ausblenden",
@@ -393,10 +399,13 @@
       dock_menu_home_label: "Startseiten-Funktionen",
       dock_menu_home_title: "Startseiten-Funktionen:",
       dock_menu_home_info: "Startseiten-spezifische Einstellungen (Shorts, News, unbeliebte Videos).",
+      dock_menu_watch_label: "Video-Funktionen",
+      dock_menu_watch_title: "Video-Funktionen:",
+      dock_menu_watch_info: "Einstellungen für die Videoseite (/watch).",
       dock_menu_adv_label: "Erweitert",
       dock_menu_adv_title: "Erweitert:",
       dock_menu_adv_info: "Erweiterte Dock-Optionen (Sichtbarkeit, etc.).",
-      dock_menu_back: "Zurück",
+      dock_menu_back: "Zurück ◀️",
 
       dock_mode_state_perf: "Modus: Leistung",
       dock_mode_state_eco: "Modus: Sparen",
@@ -464,7 +473,7 @@
       status_on: "ON",
       status_off: "OFF",
 
-      dock_collapse: "Colapsar 🧹",
+      dock_collapse: "Colapsar ▼",
       dock_expand: "Ajustes ▲",
       dock_shorts_show: "Mostrar Shorts",
       dock_shorts_hide: "Ocultar Shorts",
@@ -530,10 +539,13 @@
       dock_menu_home_label: "Funciones de Inicio",
       dock_menu_home_title: "Funciones de Inicio:",
       dock_menu_home_info: "Ajustes específicos de Inicio (Shorts, Noticias, videos poco populares).",
+      dock_menu_watch_label: "Funciones de Video",
+      dock_menu_watch_title: "Funciones de Video:",
+      dock_menu_watch_info: "Ajustes de la página de video (/watch).",
       dock_menu_adv_label: "Avanzado",
       dock_menu_adv_title: "Avanzado:",
       dock_menu_adv_info: "Opciones avanzadas del dock (visibilidad, etc.).",
-      dock_menu_back: "Volver",
+      dock_menu_back: "Volver ◀️",
 
       dock_mode_state_perf: "Modo: Rendimiento",
       dock_mode_state_eco: "Modo: Ahorro",
@@ -1655,7 +1667,7 @@
   const BTN_HEADER = "ytcf-btn-header"; // ✅ header toggle on /watch
   const BTN_MODE_STATUS = "ytcf-btn-mode-status";
   const BTN_MODE_CHANGE = "ytcf-btn-mode-change";
-  const BTN_MENU_HOME = "ytcf-btn-menu-home";
+  const BTN_MENU_WATCH = "ytcf-btn-menu-watch";
   const BTN_MENU_ADV = "ytcf-btn-menu-adv";
   const BTN_MENU_BACK = "ytcf-btn-menu-back";
   const BTN_MENU_TITLE = "ytcf-btn-menu-title";
@@ -1669,6 +1681,41 @@
     const y = window.scrollY || document.documentElement.scrollTop || 0;
     const threshold = Math.max(650, Math.floor((window.innerHeight || 800) * 1.4));
     return y >= threshold;
+  }
+
+  function applyGearHover(btn) {
+    if (!btn) return;
+    if (btn.dataset.ytcfGearInit === "1") return;
+    btn.dataset.ytcfGearInit = "1";
+
+    const fullLabel = T.dock_expand;
+    const showText = () => {
+      if (!btn.isConnected) return;
+      btn.textContent = fullLabel;
+      btn.style.width = "auto";
+      btn.style.maxWidth = "unset";
+      btn.style.paddingLeft = "12px";
+      btn.style.paddingRight = "12px";
+      btn.title = "";
+      btn.removeAttribute("aria-label");
+    };
+
+    const showIcon = () => {
+      if (!btn.isConnected) return;
+      btn.textContent = "⚙️";
+      btn.style.width = "28px";
+      btn.style.maxWidth = "28px";
+      btn.style.paddingLeft = "0";
+      btn.style.paddingRight = "0";
+      btn.title = fullLabel;
+      btn.setAttribute("aria-label", fullLabel);
+    };
+
+    showIcon();
+    btn.addEventListener("mouseenter", showText);
+    btn.addEventListener("mouseleave", showIcon);
+    btn.addEventListener("focus", showText);
+    btn.addEventListener("blur", showIcon);
   }
 
   function applyGoTopHover(btn) {
@@ -1731,18 +1778,11 @@
     }, perf ? 120 : 0);
   }
 
-  // ✅ NEW: minimal scroll watcher to show/hide the button while collapsed (especially in ECO)
+  // ✅ minimal scroll watcher to show/hide the button (especially in ECO)
   let lastGoTopVisible = null;
   let scrollTicking = false;
   function onScrollMaybeUpdateDock() {
     if (!getBool(KEY.floatButtons)) return;
-
-    // only relevant when the dock is collapsed (⚙️ shown)
-    const collapsed = (uiCollapsed && isHome()) || (uiCollapsedWatch && isWatch());
-    if (!collapsed) {
-      lastGoTopVisible = null;
-      return;
-    }
 
     const vis = shouldShowGoTop();
     if (vis === lastGoTopVisible) return;
@@ -1782,7 +1822,7 @@
   let lastDockKey = "";
   let dockIsHidden = false;
   let dockWasFullscreen = false;
-  let dockSubmenu = null; // "home" | "advanced" | null
+  let dockSubmenu = null; // "watch" | "advanced" | null
 
   function isFullscreenNow() {
     return !!(document.fullscreenElement || document.webkitFullscreenElement);
@@ -1825,7 +1865,16 @@
       font-size: 12px;
       transform: translateZ(0);
     `;
-    if (getMode() !== "perf") btn.style.transform = "none";
+    if (getMode() !== "perf") {
+      btn.style.transform = "none";
+    } else {
+      btn.style.background = "linear-gradient(180deg, rgba(18,18,18,0.9), rgba(0,0,0,0.72))";
+      btn.style.border = "1px solid rgba(255,255,255,0.28)";
+      btn.style.boxShadow = "0 10px 22px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08)";
+      btn.style.backdropFilter = "blur(6px)";
+      btn.style.webkitBackdropFilter = "blur(6px)";
+      btn.style.transition = "transform 160ms ease, box-shadow 160ms ease, background 160ms ease";
+    }
     return btn;
   }
 
@@ -1951,6 +2000,25 @@
 
     const infoBtn = makeInfoIcon(options.infoText);
 
+    const perf = getMode() === "perf";
+    const canHoverAction = !isUltraMode();
+
+    actionBtn.style.whiteSpace = "nowrap";
+    if (perf) {
+      actionBtn.style.maxWidth = "0";
+      actionBtn.style.paddingLeft = "0";
+      actionBtn.style.paddingRight = "0";
+      actionBtn.style.opacity = "0";
+      actionBtn.style.transform = "translateX(6px)";
+      actionBtn.style.marginRight = "-6px";
+      actionBtn.style.overflow = "hidden";
+      actionBtn.style.pointerEvents = "none";
+      actionBtn.style.transition = "max-width 180ms ease, padding 180ms ease, opacity 180ms ease, transform 180ms ease";
+    } else {
+      actionBtn.style.display = "none";
+      actionBtn.style.pointerEvents = "none";
+    }
+
     const render = () => {
       renderToggleState(stateBtn, options.label, getBool(options.key));
       actionBtn.textContent = getBool(options.key) ? options.actionOn : options.actionOff;
@@ -1965,7 +2033,47 @@
       forceRenderDockNow();
     });
 
+    const showAction = () => {
+      if (!canHoverAction) return;
+      if (perf) {
+        actionBtn.style.maxWidth = "260px";
+        actionBtn.style.paddingLeft = "12px";
+        actionBtn.style.paddingRight = "12px";
+        actionBtn.style.opacity = "1";
+        actionBtn.style.transform = "translateX(0)";
+        actionBtn.style.marginRight = "0";
+        actionBtn.style.pointerEvents = "auto";
+      } else {
+        actionBtn.style.display = "";
+        actionBtn.style.pointerEvents = "auto";
+      }
+    };
+
+    const hideAction = () => {
+      if (perf) {
+        actionBtn.style.maxWidth = "0";
+        actionBtn.style.paddingLeft = "0";
+        actionBtn.style.paddingRight = "0";
+        actionBtn.style.opacity = "0";
+        actionBtn.style.transform = "translateX(6px)";
+        actionBtn.style.marginRight = "-6px";
+        actionBtn.style.pointerEvents = "none";
+      } else {
+        actionBtn.style.display = "none";
+        actionBtn.style.pointerEvents = "none";
+      }
+    };
+
     render();
+    hideAction();
+
+    if (canHoverAction) {
+      wrap.addEventListener("mouseenter", showAction);
+      wrap.addEventListener("mouseleave", hideAction);
+      wrap.addEventListener("focusin", showAction);
+      wrap.addEventListener("focusout", hideAction);
+    }
+
     wrap.append(actionBtn, stateBtn, infoBtn);
     return wrap;
   }
@@ -2315,7 +2423,7 @@
         forceRenderDockNow();
       });
 
-      const titleText = (dockSubmenu === "home") ? T.dock_menu_home_title : T.dock_menu_adv_title;
+      const titleText = (dockSubmenu === "watch") ? T.dock_menu_watch_title : T.dock_menu_adv_title;
       const titleBtn = makeDockButton(BTN_MENU_TITLE, titleText);
       titleBtn.setAttribute("aria-disabled", "true");
       titleBtn.style.pointerEvents = "none";
@@ -2327,7 +2435,7 @@
       titleBtn.style.opacity = "1";
 
       items.push(backBtn, titleBtn);
-      if (dockSubmenu === "home") items.push(...buildHomeRows());
+      if (dockSubmenu === "watch") items.push(...buildWatchRows());
       else items.push(...buildAdvancedRows());
 
       dock.replaceChildren(...items);
@@ -2340,9 +2448,8 @@
         clearDockIdleTimers();
         setDockDim(dock, false);
 
-        const expand = makeDockButton(BTN_EXPAND, "⚙️");
-        expand.title = T.dock_expand;
-        expand.setAttribute("aria-label", T.dock_expand);
+        const expand = makeDockButton(BTN_EXPAND, "");
+        applyGearHover(expand);
 
         expand.addEventListener("click", () => {
           setUiCollapsed(false);
@@ -2369,8 +2476,19 @@
       });
 
       const rows = [
+        ...buildHomeRows(),
         ...buildGeneralRows(),
       ];
+
+      const watchBtn = makeMenuAccessButton(
+        BTN_MENU_WATCH,
+        T.dock_menu_watch_label,
+        T.dock_menu_watch_info,
+        () => {
+          dockSubmenu = "watch";
+          forceRenderDockNow();
+        }
+      );
 
       const advancedBtn = makeMenuAccessButton(
         BTN_MENU_ADV,
@@ -2382,18 +2500,16 @@
         }
       );
 
-      const homeBtn = makeMenuAccessButton(
-        BTN_MENU_HOME,
-        T.dock_menu_home_label,
-        T.dock_menu_home_info,
-        () => {
-          dockSubmenu = "home";
-          forceRenderDockNow();
-        }
-      );
-
       const modeGroup = makeModeStatusGroup();
-      dock.replaceChildren(collapse, modeGroup, ...rows, advancedBtn, homeBtn);
+      const items = [];
+      if (shouldShowGoTop()) {
+        const goTopBtn = makeDockButton(BTN_GO_TOP, GO_TOP_ICON);
+        applyGoTopHover(goTopBtn);
+        goTopBtn.addEventListener("click", () => goTopNow(goTopBtn));
+        items.push(goTopBtn);
+      }
+      items.push(collapse, modeGroup, ...rows, watchBtn, advancedBtn);
+      dock.replaceChildren(...items);
       armDockIdle(dock, "home");
       if (getMode() === "perf") animateDockIn(dock);
       return;
@@ -2403,9 +2519,8 @@
     if (onWatch) {
       // When collapsed on watch => show only Expand (+ go-top above if needed)
       if (uiCollapsedWatch) {
-        const expandW = makeDockButton(BTN_WATCH_EXPAND, "⚙️");
-        expandW.title = T.dock_expand;
-        expandW.setAttribute("aria-label", T.dock_expand);
+        const expandW = makeDockButton(BTN_WATCH_EXPAND, "");
+        applyGearHover(expandW);
         expandW.addEventListener("click", () => {
           setUiCollapsedWatch(false);
           forceRenderDockNow();
@@ -2436,8 +2551,17 @@
 
       const rows = [
         ...buildGeneralRows(),
-        ...buildWatchRows(),
       ];
+
+      const watchBtn = makeMenuAccessButton(
+        BTN_MENU_WATCH,
+        T.dock_menu_watch_label,
+        T.dock_menu_watch_info,
+        () => {
+          dockSubmenu = "watch";
+          forceRenderDockNow();
+        }
+      );
 
       const advancedBtn = makeMenuAccessButton(
         BTN_MENU_ADV,
@@ -2450,7 +2574,15 @@
       );
 
       const modeGroup = makeModeStatusGroup();
-      dock.replaceChildren(collapseW, modeGroup, ...rows, advancedBtn);
+      const items = [];
+      if (shouldShowGoTop()) {
+        const goTopBtn = makeDockButton(BTN_GO_TOP, GO_TOP_ICON);
+        applyGoTopHover(goTopBtn);
+        goTopBtn.addEventListener("click", () => goTopNow(goTopBtn));
+        items.push(goTopBtn);
+      }
+      items.push(collapseW, modeGroup, ...rows, watchBtn, advancedBtn);
+      dock.replaceChildren(...items);
       armDockIdle(dock, "watch");
       if (getMode() === "perf") animateDockIn(dock);
       return;
