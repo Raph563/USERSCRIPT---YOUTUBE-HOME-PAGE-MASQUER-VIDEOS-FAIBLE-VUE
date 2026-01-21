@@ -1,21 +1,15 @@
-# YouTube CleanFeed 🇫🇷 🇬🇧 🇩🇪 🇪🇸  
-
-
-🇫🇷 Un filtre intelligent pour nettoyer votre feed YouTube.
-
-🇬🇧 A smart filter to clean up your YouTube feed.
-
-🇩🇪 Ein intelligenter Filter zur Bereinigung deines YouTube-Feeds.
-
-🇪🇸 Un filtro inteligente para limpiar tu feed de YouTube.
-
----
+# YouTube CleanFeed 🇫🇷 🇬🇧 🇩🇪 🇪🇸 🇮🇹 🇵🇹 🇳🇱 🇵🇱 🇹🇷
 
 ## 🌍 Languages / Langues
-- Français
-- English
-- Deutsch
-- Español
+- [Français](#-français)
+- [English](#-english)
+- [Deutsch](docs/README.de.md)
+- [Español](docs/README.es.md)
+- [Italiano](docs/README.it.md)
+- [Português](docs/README.pt.md)
+- [Nederlands](docs/README.nl.md)
+- [Polski](docs/README.pl.md)
+- [Türkçe](docs/README.tr.md)
 
 ---
 
@@ -23,27 +17,35 @@
 
 ### ✨ Description
 **YouTube CleanFeed** est un userscript Tampermonkey qui masque automatiquement :
-- les vidéos peu populaires
-- les lives avec peu de spectateurs  
+- Shorts (Accueil, Recherche, menu latéral)
+- News / Top stories sur l’accueil
+- vidéos peu populaires (Accueil, /watch, Recherche)
+- option : bloquer la page Shorts (redirection vers Accueil)
 
 Il fonctionne :
 - sur la **page d’accueil**
+- sur la **recherche**
 - sur les **recommandations** d’une vidéo  
 - avec la navigation **SPA** de YouTube (sans rechargement)
 
 ### 🧠 Fonctionnalités
-- Filtrage par nombre de vues
-- Filtrage des lives par nombre de spectateurs
-- Boutons contextuels (Accueil / Vidéo)
-- Menu Tampermonkey avec notifications toast
-- Multilingue automatique
-- Performances optimisées (observers ciblés)
+- Seuil de vues personnalisable (pas rapides + valeur manuelle)
+- Dock flottant avec Collapse/Expand, sous-menus, bouton “Go to top”
+- Auto-hide du header sur /watch (affichage au survol)
+- Modes : Performance, Économie, Ultra Éco
+- Notifications toast et menu Tampermonkey catégorisé
+- Optimisations pour performances et anti-flicker
 
 ### ⚙️ Installation
 1. Installer Tampermonkey
 2. Créer un nouveau script
-3. Coller le code du script
+3. Coller le code du script depuis `usercript.js`
 4. Sauvegarder
+
+### 🧩 Compatibilité
+- Tampermonkey
+- YouTube Desktop
+- Chromium / Firefox
 
 ---
 
@@ -51,74 +53,32 @@ Il fonctionne :
 
 ### ✨ Description
 **YouTube CleanFeed** is a Tampermonkey userscript that automatically hides:
-- low-popularity videos
-- live streams with few viewers  
+- Shorts (Home, Search, sidebar)
+- News / Top stories on Home
+- low-popularity videos (Home, /watch, Search)
+- optional: block the Shorts page (redirect to Home)
 
 It works on:
 - the **Home page**
+- **Search**
 - **Watch** recommendations  
 - fully supports YouTube’s **SPA navigation**
 
 ### 🧠 Features
-- View-count filtering
-- Live viewer filtering
-- Contextual buttons (Home / Watch)
-- Tampermonkey menu with toast notifications
-- Automatic multi-language support
-- Optimized performance (scoped observers)
+- Customizable view threshold (quick steps + manual input)
+- Floating dock with Collapse/Expand, submenus, “Go to top” button
+- Header auto-hide on /watch (reveal on hover)
+- Modes: Performance, Saver, Ultra Saver
+- Toast notifications and categorized Tampermonkey menu
+- Performance and anti-flicker optimizations
 
----
+### ⚙️ Installation
+1. Install Tampermonkey
+2. Create a new userscript
+3. Paste the script from `usercript.js`
+4. Save
 
-## 🇩🇪 Deutsch
-
-### ✨ Beschreibung
-**YouTube CleanFeed** blendet automatisch:
-- wenig beliebte Videos
-- Livestreams mit wenigen Zuschauern aus  
-
-Unterstützt:
-- die **Startseite**
-- Video-Empfehlungen
-- YouTubes **SPA-Navigation**
-
-### 🧠 Funktionen
-- Filter nach Aufrufen
-- Filter für Livestream-Zuschauer
-- Kontextuelle Buttons
-- Tampermonkey-Menü mit Benachrichtigungen
-- Mehrsprachig
-- Sehr performant
-
----
-
-## 🇪🇸 Español
-
-### ✨ Descripción
-**YouTube CleanFeed** oculta automáticamente:
-- videos con pocas vistas
-- directos con pocos espectadores  
-
-Funciona en:
-- la **página de inicio**
-- recomendaciones de videos
-- navegación **SPA** de YouTube
-
-### 🧠 Funcionalidades
-- Filtro por número de vistas
-- Filtro de directos por espectadores
-- Botones contextuales
-- Menú Tampermonkey con notificaciones
-- Multilenguaje automático
-- Alto rendimiento
-
----
-
-## 🧩 Compatibility
+### 🧩 Compatibility
 - Tampermonkey
 - YouTube Desktop
 - Chromium / Firefox
-
----
-
-## 📄 Licence
-MIT
