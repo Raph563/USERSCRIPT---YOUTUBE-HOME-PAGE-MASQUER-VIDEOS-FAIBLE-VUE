@@ -1850,6 +1850,7 @@
   let dockIsHidden = false;
   let dockWasFullscreen = false;
   let dockSubmenu = null; // "home" | "search" | "sidebar" | "watch" | "advanced" | null
+  let modeChangeRevealUntil = 0;
 
   function isFullscreenNow() {
     return !!(document.fullscreenElement || document.webkitFullscreenElement);
@@ -2174,6 +2175,7 @@
     const changeBtn = makeDockButton(BTN_MODE_CHANGE, T.dock_mode_change);
     changeBtn.style.display = "none";
     changeBtn.addEventListener("click", () => {
+      modeChangeRevealUntil = Date.now() + 500;
       const cur = getMode();
       const next = (cur === "ultra") ? "eco" : (cur === "eco" ? "perf" : "ultra");
       applyModeAndNotify(next);
@@ -2181,17 +2183,34 @@
 
     const infoBtn = makeInfoIcon(getModeInfoText(getMode()));
 
-    const show = () => { changeBtn.style.display = ""; };
-    const hide = () => { changeBtn.style.display = "none"; };
+    let hideTimer = null;
+    const show = () => {
+      if (hideTimer) clearTimeout(hideTimer);
+      hideTimer = null;
+      changeBtn.style.display = "";
+    };
+    const scheduleHide = () => {
+      if (hideTimer) clearTimeout(hideTimer);
+      const delay = Math.max(0, modeChangeRevealUntil - Date.now());
+      if (delay === 0) {
+        if (!wrap.matches(":hover")) changeBtn.style.display = "none";
+        return;
+      }
+      hideTimer = setTimeout(() => {
+        if (!wrap.matches(":hover")) changeBtn.style.display = "none";
+      }, delay);
+    };
+
+    if (Date.now() < modeChangeRevealUntil) show();
 
     wrap.addEventListener("mouseenter", show);
-    wrap.addEventListener("mouseleave", hide);
+    wrap.addEventListener("mouseleave", scheduleHide);
     statusBtn.addEventListener("focus", show);
     changeBtn.addEventListener("focus", show);
     infoBtn.addEventListener("focus", show);
-    statusBtn.addEventListener("blur", hide);
-    changeBtn.addEventListener("blur", hide);
-    infoBtn.addEventListener("blur", hide);
+    statusBtn.addEventListener("blur", scheduleHide);
+    changeBtn.addEventListener("blur", scheduleHide);
+    infoBtn.addEventListener("blur", scheduleHide);
 
     wrap.append(changeBtn, statusBtn, infoBtn);
     return wrap;
@@ -2519,7 +2538,14 @@ function buildSubmenuButtons(highlightTarget) {
         forceRenderDockNow();
       });
 
-      const titleText = (dockSubmenu === "watch") ? T.dock_menu_watch_title : T.dock_menu_adv_title;
+      const submenuTitles = {
+        home: T.dock_menu_home_title,
+        search: T.dock_menu_search_title,
+        sidebar: T.dock_menu_sidebar_title,
+        watch: T.dock_menu_watch_title,
+        advanced: T.dock_menu_adv_title,
+      };
+      const titleText = submenuTitles[dockSubmenu] || T.dock_menu_adv_title;
       const titleBtn = makeDockButton(BTN_MENU_TITLE, titleText);
       titleBtn.setAttribute("aria-disabled", "true");
       titleBtn.style.pointerEvents = "none";
