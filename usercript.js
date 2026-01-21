@@ -53,8 +53,8 @@
       status_on: "ON",
       status_off: "OFF",
 
-      dock_collapse: "Ranger 🗂️",
-      dock_expand: "Déplier 📂",
+      dock_collapse: "Ranger 🧹",
+      dock_expand: "Paramètre ▲",
       dock_shorts_show: "Afficher Shorts",
       dock_shorts_hide: "Masquer Shorts",
       dock_lowpop_home_show: "Afficher les vidéos peu populaires",
@@ -75,18 +75,47 @@
       dock_shorts_label: "Shorts masqués",
       dock_shorts_action_on: "Afficher les Shorts",
       dock_shorts_action_off: "Masquer les Shorts",
+      dock_shorts_info: "Masque les étagères Shorts sur la page d’accueil.",
+
+      dock_news_label: "News masquées",
+      dock_news_action_on: "Afficher les News",
+      dock_news_action_off: "Masquer les News",
+      dock_news_info: "Masque la section Actualités/News sur la page d’accueil.",
+
+      dock_shorts_search_label: "Shorts masqués (Recherche)",
+      dock_shorts_search_action_on: "Afficher les Shorts (Recherche)",
+      dock_shorts_search_action_off: "Masquer les Shorts (Recherche)",
+      dock_shorts_search_info: "Supprime les étagères Shorts et les résultats Shorts dans la recherche.",
+
+      dock_sidebar_shorts_label: "Shorts masqués (menu)",
+      dock_sidebar_shorts_action_on: "Afficher “Shorts” (menu)",
+      dock_sidebar_shorts_action_off: "Masquer “Shorts” (menu)",
+      dock_sidebar_shorts_info: "Cache l’entrée Shorts dans le menu latéral.",
+
+      dock_block_shorts_label: "Page Shorts bloquée",
+      dock_block_shorts_action_on: "Débloquer la page Shorts",
+      dock_block_shorts_action_off: "Bloquer la page Shorts",
+      dock_block_shorts_info: "Redirige la page Shorts vers l’accueil.",
 
       dock_lowpop_home_state_on: "Filtre impopulaire (Accueil) : ON",
       dock_lowpop_home_state_off: "Filtre impopulaire (Accueil) : OFF",
       dock_lowpop_home_label: "Vidéos peu populaires (Accueil)",
       dock_lowpop_home_action_on: "Afficher les vidéos peu populaires",
       dock_lowpop_home_action_off: "Masquer les vidéos peu populaires",
+      dock_lowpop_home_info: "Masque les vidéos sous le seuil de vues sur l’accueil.",
 
       dock_lowpop_watch_state_on: "Filtre impopulaire (/watch) : ON",
       dock_lowpop_watch_state_off: "Filtre impopulaire (/watch) : OFF",
       dock_lowpop_watch_label: "Vidéos peu populaires (/watch)",
       dock_lowpop_watch_action_on: "Afficher les recommandations peu populaires",
       dock_lowpop_watch_action_off: "Masquer les recommandations peu populaires",
+      dock_lowpop_watch_info: "Masque les recommandations sous le seuil de vues sur /watch.",
+
+      dock_header_info: "Active le masquage auto du header sur /watch, avec apparition au survol.",
+      dock_float_buttons_label: "Dock affiché",
+      dock_float_buttons_action_on: "Masquer le dock",
+      dock_float_buttons_action_off: "Afficher le dock",
+      dock_float_buttons_info: "Affiche ou masque le dock de boutons flottants.",
 
       dock_mode_state_perf: "Mode : Performance",
       dock_mode_state_eco: "Mode : Économie",
@@ -154,8 +183,8 @@
       status_on: "ON",
       status_off: "OFF",
 
-      dock_collapse: "Collapse 🗂️",
-      dock_expand: "Expand 📂",
+      dock_collapse: "Collapse 🧹",
+      dock_expand: "Settings ▲",
       dock_shorts_show: "Show Shorts",
       dock_shorts_hide: "Hide Shorts",
       dock_lowpop_home_show: "Show unpopular videos",
@@ -176,18 +205,47 @@
       dock_shorts_label: "Shorts hidden",
       dock_shorts_action_on: "Show Shorts",
       dock_shorts_action_off: "Hide Shorts",
+      dock_shorts_info: "Hides Shorts shelves on the Home feed.",
+
+      dock_news_label: "News hidden",
+      dock_news_action_on: "Show News",
+      dock_news_action_off: "Hide News",
+      dock_news_info: "Hides the News/Top stories section on Home.",
+
+      dock_shorts_search_label: "Shorts hidden (Search)",
+      dock_shorts_search_action_on: "Show Shorts (Search)",
+      dock_shorts_search_action_off: "Hide Shorts (Search)",
+      dock_shorts_search_info: "Removes Shorts shelves and Shorts results in Search.",
+
+      dock_sidebar_shorts_label: "Shorts hidden (menu)",
+      dock_sidebar_shorts_action_on: "Show Shorts (menu)",
+      dock_sidebar_shorts_action_off: "Hide Shorts (menu)",
+      dock_sidebar_shorts_info: "Hides the Shorts entry in the sidebar.",
+
+      dock_block_shorts_label: "Shorts page blocked",
+      dock_block_shorts_action_on: "Unblock Shorts page",
+      dock_block_shorts_action_off: "Block Shorts page",
+      dock_block_shorts_info: "Redirects the Shorts page back to Home.",
 
       dock_lowpop_home_state_on: "Low-pop filter (Home): ON",
       dock_lowpop_home_state_off: "Low-pop filter (Home): OFF",
       dock_lowpop_home_label: "Low-pop videos (Home)",
       dock_lowpop_home_action_on: "Show unpopular videos",
       dock_lowpop_home_action_off: "Hide unpopular videos",
+      dock_lowpop_home_info: "Hides videos under the view threshold on Home.",
 
       dock_lowpop_watch_state_on: "Low-pop filter (/watch): ON",
       dock_lowpop_watch_state_off: "Low-pop filter (/watch): OFF",
       dock_lowpop_watch_label: "Low-pop recs (/watch)",
       dock_lowpop_watch_action_on: "Show unpopular recommendations",
       dock_lowpop_watch_action_off: "Hide unpopular recommendations",
+      dock_lowpop_watch_info: "Hides recommendations under the view threshold on /watch.",
+
+      dock_header_info: "Enables auto-hide for the header on /watch, with reveal on hover.",
+      dock_float_buttons_label: "Dock visible",
+      dock_float_buttons_action_on: "Hide the dock",
+      dock_float_buttons_action_off: "Show the dock",
+      dock_float_buttons_info: "Shows or hides the floating button dock.",
 
       dock_mode_state_perf: "Mode: Performance",
       dock_mode_state_eco: "Mode: Saver",
@@ -255,8 +313,8 @@
       status_on: "EIN",
       status_off: "AUS",
 
-      dock_collapse: "Einklappen 🗂️",
-      dock_expand: "Ausklappen 📂",
+      dock_collapse: "Einklappen 🧹",
+      dock_expand: "Einstellungen ▲",
       dock_shorts_show: "Shorts anzeigen",
       dock_shorts_hide: "Shorts ausblenden",
       dock_lowpop_home_show: "Unbeliebte Videos anzeigen",
@@ -277,18 +335,47 @@
       dock_shorts_label: "Shorts ausgeblendet",
       dock_shorts_action_on: "Shorts anzeigen",
       dock_shorts_action_off: "Shorts ausblenden",
+      dock_shorts_info: "Blendet Shorts-Regale auf der Startseite aus.",
+
+      dock_news_label: "News ausgeblendet",
+      dock_news_action_on: "News anzeigen",
+      dock_news_action_off: "News ausblenden",
+      dock_news_info: "Blendet News/Top-Meldungen auf der Startseite aus.",
+
+      dock_shorts_search_label: "Shorts ausgeblendet (Suche)",
+      dock_shorts_search_action_on: "Shorts anzeigen (Suche)",
+      dock_shorts_search_action_off: "Shorts ausblenden (Suche)",
+      dock_shorts_search_info: "Entfernt Shorts-Regale und Shorts-Ergebnisse in der Suche.",
+
+      dock_sidebar_shorts_label: "Shorts ausgeblendet (Menü)",
+      dock_sidebar_shorts_action_on: "Shorts anzeigen (Menü)",
+      dock_sidebar_shorts_action_off: "Shorts ausblenden (Menü)",
+      dock_sidebar_shorts_info: "Blendet den Shorts-Eintrag in der Seitenleiste aus.",
+
+      dock_block_shorts_label: "Shorts-Seite blockiert",
+      dock_block_shorts_action_on: "Shorts-Seite freigeben",
+      dock_block_shorts_action_off: "Shorts-Seite blockieren",
+      dock_block_shorts_info: "Leitet die Shorts-Seite zur Startseite um.",
 
       dock_lowpop_home_state_on: "Unbeliebt-Filter (Home): EIN",
       dock_lowpop_home_state_off: "Unbeliebt-Filter (Home): AUS",
       dock_lowpop_home_label: "Unbeliebte Videos (Home)",
       dock_lowpop_home_action_on: "Unbeliebte Videos anzeigen",
       dock_lowpop_home_action_off: "Unbeliebte Videos ausblenden",
+      dock_lowpop_home_info: "Blendet Videos unter dem Aufruf-Schwellenwert auf Home aus.",
 
       dock_lowpop_watch_state_on: "Unbeliebt-Filter (/watch): EIN",
       dock_lowpop_watch_state_off: "Unbeliebt-Filter (/watch): AUS",
       dock_lowpop_watch_label: "Unbeliebte Empfehlungen (/watch)",
       dock_lowpop_watch_action_on: "Unbeliebte Empfehlungen anzeigen",
       dock_lowpop_watch_action_off: "Unbeliebte Empfehlungen ausblenden",
+      dock_lowpop_watch_info: "Blendet Empfehlungen unter dem Aufruf-Schwellenwert auf /watch aus.",
+
+      dock_header_info: "Aktiviert Auto-Hide für den Header auf /watch, mit Anzeige bei Hover.",
+      dock_float_buttons_label: "Dock sichtbar",
+      dock_float_buttons_action_on: "Dock ausblenden",
+      dock_float_buttons_action_off: "Dock anzeigen",
+      dock_float_buttons_info: "Zeigt oder versteckt das schwebende Dock.",
 
       dock_mode_state_perf: "Modus: Leistung",
       dock_mode_state_eco: "Modus: Sparen",
@@ -356,8 +443,8 @@
       status_on: "ON",
       status_off: "OFF",
 
-      dock_collapse: "Colapsar 🗂️",
-      dock_expand: "Expandir 📂",
+      dock_collapse: "Colapsar 🧹",
+      dock_expand: "Ajustes ▲",
       dock_shorts_show: "Mostrar Shorts",
       dock_shorts_hide: "Ocultar Shorts",
       dock_lowpop_home_show: "Mostrar videos poco populares",
@@ -378,18 +465,47 @@
       dock_shorts_label: "Shorts ocultos",
       dock_shorts_action_on: "Mostrar Shorts",
       dock_shorts_action_off: "Ocultar Shorts",
+      dock_shorts_info: "Oculta los estantes de Shorts en la página de inicio.",
+
+      dock_news_label: "Noticias ocultas",
+      dock_news_action_on: "Mostrar Noticias",
+      dock_news_action_off: "Ocultar Noticias",
+      dock_news_info: "Oculta la sección de Noticias/Top stories en Inicio.",
+
+      dock_shorts_search_label: "Shorts ocultos (Búsqueda)",
+      dock_shorts_search_action_on: "Mostrar Shorts (Búsqueda)",
+      dock_shorts_search_action_off: "Ocultar Shorts (Búsqueda)",
+      dock_shorts_search_info: "Quita estantes de Shorts y resultados de Shorts en la búsqueda.",
+
+      dock_sidebar_shorts_label: "Shorts ocultos (menú)",
+      dock_sidebar_shorts_action_on: "Mostrar Shorts (menú)",
+      dock_sidebar_shorts_action_off: "Ocultar Shorts (menú)",
+      dock_sidebar_shorts_info: "Oculta la entrada de Shorts en el menú lateral.",
+
+      dock_block_shorts_label: "Página Shorts bloqueada",
+      dock_block_shorts_action_on: "Desbloquear página Shorts",
+      dock_block_shorts_action_off: "Bloquear página Shorts",
+      dock_block_shorts_info: "Redirige la página Shorts a Inicio.",
 
       dock_lowpop_home_state_on: "Filtro poco popular (Inicio): ON",
       dock_lowpop_home_state_off: "Filtro poco popular (Inicio): OFF",
       dock_lowpop_home_label: "Videos poco populares (Inicio)",
       dock_lowpop_home_action_on: "Mostrar videos poco populares",
       dock_lowpop_home_action_off: "Ocultar videos poco populares",
+      dock_lowpop_home_info: "Oculta videos por debajo del umbral de vistas en Inicio.",
 
       dock_lowpop_watch_state_on: "Filtro poco popular (/watch): ON",
       dock_lowpop_watch_state_off: "Filtro poco popular (/watch): OFF",
       dock_lowpop_watch_label: "Recomendaciones poco populares (/watch)",
       dock_lowpop_watch_action_on: "Mostrar recomendaciones poco populares",
       dock_lowpop_watch_action_off: "Ocultar recomendaciones poco populares",
+      dock_lowpop_watch_info: "Oculta recomendaciones por debajo del umbral de vistas en /watch.",
+
+      dock_header_info: "Activa el auto-ocultado del header en /watch con aparición al pasar.",
+      dock_float_buttons_label: "Dock visible",
+      dock_float_buttons_action_on: "Ocultar el dock",
+      dock_float_buttons_action_off: "Mostrar el dock",
+      dock_float_buttons_info: "Muestra u oculta el dock de botones flotantes.",
 
       dock_mode_state_perf: "Modo: Rendimiento",
       dock_mode_state_eco: "Modo: Ahorro",
@@ -1500,11 +1616,6 @@
     dock.addEventListener("touchstart", wake, { passive: true, capture: true });
   }
 
-  /* =========================================================
-   * AUTO-SHRINK “Déplier / Expand” button (eco/perf)
-   * ========================================================= */
-  // (per-button timers are handled inside applyExpandAutoShrink)
-
   const DOCK_ID = "ytcf-dock";
   const BTN_SHORTS = "ytcf-btn-shorts";
   const BTN_HOME = "ytcf-btn-home";
@@ -1516,82 +1627,10 @@
   const BTN_HEADER = "ytcf-btn-header"; // ✅ header toggle on /watch
   const BTN_MODE_STATUS = "ytcf-btn-mode-status";
   const BTN_MODE_CHANGE = "ytcf-btn-mode-change";
-  const BTN_MODE_BACK = "ytcf-btn-mode-back";
-  const BTN_MODE_TITLE = "ytcf-btn-mode-title";
-  const BTN_MODE_ULTRA = "ytcf-btn-mode-ultra";
-  const BTN_MODE_ECO = "ytcf-btn-mode-eco";
-  const BTN_MODE_PERF = "ytcf-btn-mode-perf";
 
   // ✅ NEW: Go top (only when dock collapsed & user scrolled enough)
   const BTN_GO_TOP = "ytcf-btn-go-top";
   const GO_TOP_ICON = "⬆️";
-
-  function applyExpandAutoShrink(btn, opts = {}) {
-    if (!btn) return;
-
-    const isExpand =
-      btn.id === BTN_EXPAND ||
-      btn.id === BTN_WATCH_EXPAND;
-
-    if (!isExpand) return;
-    if (btn.dataset.ytcfExpandShrinkInit === "1") return;
-    btn.dataset.ytcfExpandShrinkInit = "1";
-    const allowExpand = opts.allowExpand !== false;
-
-    const perf = getMode() === "perf";
-    const SHRUNK_CHAR = "⚙️";
-    const SHRUNK_W = "28px";
-
-    btn.style.transition = perf
-      ? "width 160ms ease, max-width 160ms ease, padding 160ms ease"
-      : "none";
-    btn.style.willChange = perf ? "width, max-width, padding" : "";
-
-    const fullLabel = T.dock_expand;
-    let isShrunk = false;
-
-    function shrinkNow() {
-      if (!btn.isConnected) return;
-      if (isShrunk) return;
-
-      btn.dataset.ytcfFullText = btn.dataset.ytcfFullText || btn.textContent;
-
-      btn.textContent = SHRUNK_CHAR;
-      btn.style.width = SHRUNK_W;
-      btn.style.maxWidth = SHRUNK_W;
-      btn.style.paddingLeft = "0";
-      btn.style.paddingRight = "0";
-      btn.title = fullLabel;
-      btn.setAttribute("aria-label", fullLabel);
-
-      isShrunk = true;
-    }
-
-    function expandNow() {
-      if (!btn.isConnected) return;
-      if (!isShrunk) return;
-      if (!allowExpand) return;
-
-      const full = btn.dataset.ytcfFullText || fullLabel;
-
-      btn.textContent = full;
-      btn.style.width = "auto";
-      btn.style.maxWidth = "unset";
-      btn.style.paddingLeft = "12px";
-      btn.style.paddingRight = "12px";
-      btn.removeAttribute("aria-label");
-      btn.title = "";
-
-      isShrunk = false;
-    }
-
-    // start directly shrunk
-    shrinkNow();
-    btn.addEventListener("mouseenter", expandNow);
-    btn.addEventListener("mouseleave", shrinkNow);
-    btn.addEventListener("focus", expandNow);
-    btn.addEventListener("blur", shrinkNow);
-  }
 
   // ✅ NEW: show only when user really scrolled
   function shouldShowGoTop() {
@@ -1711,7 +1750,6 @@
   let lastDockKey = "";
   let dockIsHidden = false;
   let dockWasFullscreen = false;
-  let dockModeMenuOpen = false;
 
   function isFullscreenNow() {
     return !!(document.fullscreenElement || document.webkitFullscreenElement);
@@ -1866,35 +1904,40 @@
     container.replaceChildren(labelSpan, sep, stateSpan);
   }
 
-  function applyToggleHoverState(btn, getLabel, getIsOn, getHoverText) {
-    const stateWrap = document.createElement("span");
-    const actionWrap = document.createElement("span");
-    actionWrap.style.color = "#ffffff";
-    actionWrap.style.display = "none";
+  function makeToggleRow(options) {
+    const wrap = document.createElement("div");
+    wrap.style.display = "flex";
+    wrap.style.gap = "6px";
+    wrap.style.alignItems = "center";
+    wrap.style.justifyContent = "flex-end";
 
-    btn.replaceChildren(stateWrap, actionWrap);
+    const actionBtn = makeDockButton(options.actionId, "");
+    const stateBtn = makeDockButton(options.stateId, "");
+    stateBtn.setAttribute("aria-disabled", "true");
+    stateBtn.style.pointerEvents = "none";
+
+    const infoBtn = makeInfoIcon(options.infoText);
 
     const render = () => {
-      renderToggleState(stateWrap, getLabel(), getIsOn());
-      actionWrap.textContent = getHoverText();
+      renderToggleState(stateBtn, options.label, getBool(options.key));
+      actionBtn.textContent = getBool(options.key) ? options.actionOn : options.actionOff;
     };
 
-    const setHover = (hovering) => {
-      stateWrap.style.display = hovering ? "none" : "";
-      actionWrap.style.display = hovering ? "" : "none";
-    };
-
-    btn.addEventListener("mouseenter", () => setHover(true));
-    btn.addEventListener("mouseleave", () => setHover(false));
-    btn.addEventListener("focus", () => setHover(true));
-    btn.addEventListener("blur", () => setHover(false));
+    actionBtn.addEventListener("click", () => {
+      const next = !getBool(options.key);
+      setBool(options.key, next);
+      options.onToggle?.(next);
+      render();
+      registerMenu();
+      forceRenderDockNow();
+    });
 
     render();
-    setHover(false);
-    return render;
+    wrap.append(actionBtn, stateBtn, infoBtn);
+    return wrap;
   }
 
-  function makeInfoIcon(mode) {
+  function makeInfoIcon(message, kind = "info") {
     const info = document.createElement("button");
     info.type = "button";
     info.textContent = "i";
@@ -1914,48 +1957,11 @@
       padding: 0;
     `;
 
-    const kind = MODE_COLORS[mode]?.kind || "info";
-    const message = getModeInfoText(mode);
-
     info.addEventListener("mouseenter", () => showStickyToast(message, kind));
     info.addEventListener("mouseleave", hideToast);
     info.addEventListener("focus", () => showStickyToast(message, kind));
     info.addEventListener("blur", hideToast);
     return info;
-  }
-
-  function makeModeOption(mode, label) {
-    const wrap = document.createElement("div");
-    wrap.style.display = "flex";
-    wrap.style.gap = "8px";
-    wrap.style.alignItems = "center";
-    wrap.style.justifyContent = "flex-end";
-
-    const btn = makeDockButton(`ytcf-mode-${mode}`, label);
-    const color = MODE_COLORS[mode] || MODE_COLORS.eco;
-    const isCurrent = getMode() === mode;
-
-    btn.style.background = isCurrent ? color.bgInactive : color.bg;
-    btn.style.border = `1px solid ${isCurrent ? color.borderInactive : color.border}`;
-    btn.style.color = color.text;
-    btn.style.fontWeight = "700";
-    btn.style.cursor = isCurrent ? "default" : "pointer";
-    if (isCurrent) {
-      btn.setAttribute("aria-disabled", "true");
-      btn.style.opacity = "1";
-      btn.style.pointerEvents = "none";
-    }
-
-    if (!isCurrent) {
-      btn.addEventListener("click", () => {
-        dockModeMenuOpen = false;
-        applyModeAndNotify(mode);
-      });
-    }
-
-    const info = makeInfoIcon(mode);
-    wrap.append(btn, info);
-    return wrap;
   }
 
   function makeModeStatusGroup() {
@@ -1968,17 +1974,22 @@
     wrap.style.justifyContent = "flex-end";
 
     const statusBtn = makeDockButton(BTN_MODE_STATUS, getModeStatusText());
+    const color = MODE_COLORS[getMode()] || MODE_COLORS.eco;
+    statusBtn.style.background = color.bg;
+    statusBtn.style.border = `1px solid ${color.border}`;
+    statusBtn.style.color = color.text;
     statusBtn.style.fontWeight = "700";
     statusBtn.classList.add(getModeAnimationClass());
 
     const changeBtn = makeDockButton(BTN_MODE_CHANGE, T.dock_mode_change);
     changeBtn.style.display = "none";
     changeBtn.addEventListener("click", () => {
-      dockModeMenuOpen = true;
-      forceRenderDockNow();
+      const cur = getMode();
+      const next = (cur === "ultra") ? "eco" : (cur === "eco" ? "perf" : "ultra");
+      applyModeAndNotify(next);
     });
 
-    const infoBtn = makeInfoIcon(getMode());
+    const infoBtn = makeInfoIcon(getModeInfoText(getMode()));
 
     const show = () => { changeBtn.style.display = ""; };
     const hide = () => { changeBtn.style.display = "none"; };
@@ -2088,7 +2099,6 @@
       getBool(KEY.lowpopHome) ? "lh1" : "lh0",
       getBool(KEY.lowpopWatch) ? "lw1" : "lw0",
       getBool(KEY.headerHoverWatch) ? "hh1" : "hh0",
-      dockModeMenuOpen ? "mm1" : "mm0",
       // ✅ new visibility bit so dock updates correctly without full rerenders
       (shouldShowGoTop() ? "gt1" : "gt0"),
     ].join("|");
@@ -2113,52 +2123,15 @@
 
     showDock(dock, getMode() === "perf");
 
-    const menuOpen = dockModeMenuOpen && (onHome || onWatch);
-    if (menuOpen) {
-      clearDockIdleTimers();
-      setDockDim(dock, false);
-
-      const items = [];
-      if (shouldShowGoTop()) {
-        const goTopBtn = makeDockButton(BTN_GO_TOP, GO_TOP_ICON);
-        applyGoTopHover(goTopBtn);
-        goTopBtn.addEventListener("click", () => goTopNow(goTopBtn));
-        items.push(goTopBtn);
-      }
-
-      const backBtn = makeDockButton(BTN_MODE_BACK, T.dock_mode_back);
-      backBtn.addEventListener("click", () => {
-        dockModeMenuOpen = false;
-        forceRenderDockNow();
-      });
-
-      const titleBtn = makeDockButton(BTN_MODE_TITLE, T.dock_mode_select);
-      titleBtn.setAttribute("aria-disabled", "true");
-      titleBtn.style.pointerEvents = "none";
-      titleBtn.style.cursor = "default";
-      titleBtn.style.background = "rgba(0,0,0,0.62)";
-      titleBtn.style.color = "#ffffff";
-      titleBtn.style.border = "1px solid rgba(255,255,255,0.18)";
-      titleBtn.style.fontWeight = "700";
-      titleBtn.style.opacity = "1";
-
-      items.push(backBtn, titleBtn);
-      items.push(makeModeOption("ultra", T.dock_mode_btn_ultra));
-      items.push(makeModeOption("eco", T.dock_mode_btn_eco));
-      items.push(makeModeOption("perf", T.dock_mode_btn_perf));
-
-      dock.replaceChildren(...items);
-      return;
-    }
-
     // ===== HOME (global collapse/expand) =====
     if (onHome) {
       if (uiCollapsed) {
         clearDockIdleTimers();
         setDockDim(dock, false);
 
-        const expand = makeDockButton(BTN_EXPAND, T.dock_expand);
-        applyExpandAutoShrink(expand, { allowExpand: !shouldShowGoTop() });
+        const expand = makeDockButton(BTN_EXPAND, "⚙️");
+        expand.title = T.dock_expand;
+        expand.setAttribute("aria-label", T.dock_expand);
 
         expand.addEventListener("click", () => {
           setUiCollapsed(false);
@@ -2184,56 +2157,119 @@
         forceRenderDockNow();
       });
 
-      const shortsBtn = makeDockButton(BTN_SHORTS, "");
-      const updateShortsLabel = applyToggleHoverState(
-        shortsBtn,
-        () => T.dock_shorts_label,
-        () => getBool(KEY.shortsHome),
-        () => (getBool(KEY.shortsHome) ? T.dock_shorts_action_on : T.dock_shorts_action_off)
-      );
-      const syncShortsLabel = () => {
-        updateShortsLabel();
-      };
-      shortsBtn.addEventListener("click", () => {
-        const next = !getBool(KEY.shortsHome);
-        setBool(KEY.shortsHome, next);
-        syncShortsLabel();
-
-        scheduleRun(true);
-        setTimeout(() => scheduleRun(true), 250);
-        setTimeout(() => scheduleRun(true), 900);
-        setTimeout(() => scheduleRun(true), 1800);
-
-        registerMenu();
-        forceRenderDockNow();
-      });
-      syncShortsLabel();
-
-      const lowpopHomeBtn = makeDockButton(BTN_HOME, "");
-      const updateLowpopHomeLabel = applyToggleHoverState(
-        lowpopHomeBtn,
-        () => T.dock_lowpop_home_label,
-        () => getBool(KEY.lowpopHome),
-        () => (getBool(KEY.lowpopHome) ? T.dock_lowpop_home_action_on : T.dock_lowpop_home_action_off)
-      );
-      const syncLowpopHomeLabel = () => {
-        updateLowpopHomeLabel();
-      };
-      lowpopHomeBtn.addEventListener("click", () => {
-        const next = !getBool(KEY.lowpopHome);
-        setBool(KEY.lowpopHome, next);
-        if (!next) unhideLowpop();
-        syncLowpopHomeLabel();
-
-        scheduleRun(true);
-        showToast(next ? T.toast_btn_home_on : T.toast_btn_home_off, next ? "on" : "off");
-        registerMenu();
-        forceRenderDockNow();
-      });
-      syncLowpopHomeLabel();
+      const rows = [
+        makeToggleRow({
+          actionId: "ytcf-btn-shorts-action",
+          stateId: "ytcf-btn-shorts-state",
+          key: KEY.shortsHome,
+          label: T.dock_shorts_label,
+          actionOn: T.dock_shorts_action_on,
+          actionOff: T.dock_shorts_action_off,
+          infoText: T.dock_shorts_info,
+          onToggle: () => {
+            scheduleRun(true);
+            setTimeout(() => scheduleRun(true), 250);
+            setTimeout(() => scheduleRun(true), 900);
+            setTimeout(() => scheduleRun(true), 1800);
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-news-action",
+          stateId: "ytcf-btn-news-state",
+          key: KEY.newsHome,
+          label: T.dock_news_label,
+          actionOn: T.dock_news_action_on,
+          actionOff: T.dock_news_action_off,
+          infoText: T.dock_news_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-shorts-search-action",
+          stateId: "ytcf-btn-shorts-search-state",
+          key: KEY.shortsSearch,
+          label: T.dock_shorts_search_label,
+          actionOn: T.dock_shorts_search_action_on,
+          actionOff: T.dock_shorts_search_action_off,
+          infoText: T.dock_shorts_search_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-lowpop-home-action",
+          stateId: "ytcf-btn-lowpop-home-state",
+          key: KEY.lowpopHome,
+          label: T.dock_lowpop_home_label,
+          actionOn: T.dock_lowpop_home_action_on,
+          actionOff: T.dock_lowpop_home_action_off,
+          infoText: T.dock_lowpop_home_info,
+          onToggle: (next) => {
+            if (!next) unhideLowpop();
+            scheduleRun(true);
+            showToast(next ? T.toast_btn_home_on : T.toast_btn_home_off, next ? "on" : "off");
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-lowpop-watch-action",
+          stateId: "ytcf-btn-lowpop-watch-state",
+          key: KEY.lowpopWatch,
+          label: T.dock_lowpop_watch_label,
+          actionOn: T.dock_lowpop_watch_action_on,
+          actionOff: T.dock_lowpop_watch_action_off,
+          infoText: T.dock_lowpop_watch_info,
+          onToggle: (next) => {
+            if (!next) unhideLowpop();
+            scheduleRun(true);
+            showToast(next ? T.toast_btn_watch_on : T.toast_btn_watch_off, next ? "on" : "off");
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-header-action",
+          stateId: "ytcf-btn-header-state",
+          key: KEY.headerHoverWatch,
+          label: T.dock_header_label,
+          actionOn: T.dock_header_action_on,
+          actionOff: T.dock_header_action_off,
+          infoText: T.dock_header_info,
+          onToggle: (next) => {
+            bindHeaderMouse();
+            applyHeaderHoverNow();
+            scheduleRun(true);
+            showToast(next ? T.toast_header_on : T.toast_header_off, next ? "on" : "off");
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-sidebar-shorts-action",
+          stateId: "ytcf-btn-sidebar-shorts-state",
+          key: KEY.sidebarShorts,
+          label: T.dock_sidebar_shorts_label,
+          actionOn: T.dock_sidebar_shorts_action_on,
+          actionOff: T.dock_sidebar_shorts_action_off,
+          infoText: T.dock_sidebar_shorts_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-block-shorts-action",
+          stateId: "ytcf-btn-block-shorts-state",
+          key: KEY.blockShortsPage,
+          label: T.dock_block_shorts_label,
+          actionOn: T.dock_block_shorts_action_on,
+          actionOff: T.dock_block_shorts_action_off,
+          infoText: T.dock_block_shorts_info,
+          onToggle: () => { maybeRedirectShortsPage(); scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-float-buttons-action",
+          stateId: "ytcf-btn-float-buttons-state",
+          key: KEY.floatButtons,
+          label: T.dock_float_buttons_label,
+          actionOn: T.dock_float_buttons_action_on,
+          actionOff: T.dock_float_buttons_action_off,
+          infoText: T.dock_float_buttons_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+      ];
 
       const modeGroup = makeModeStatusGroup();
-      dock.replaceChildren(collapse, modeGroup, shortsBtn, lowpopHomeBtn);
+      dock.replaceChildren(collapse, modeGroup, ...rows);
       armDockIdle(dock, "home");
       if (getMode() === "perf") animateDockIn(dock);
       return;
@@ -2243,8 +2279,9 @@
     if (onWatch) {
       // When collapsed on watch => show only Expand (+ go-top above if needed)
       if (uiCollapsedWatch) {
-        const expandW = makeDockButton(BTN_WATCH_EXPAND, T.dock_expand);
-        applyExpandAutoShrink(expandW, { allowExpand: !shouldShowGoTop() });
+        const expandW = makeDockButton(BTN_WATCH_EXPAND, "⚙️");
+        expandW.title = T.dock_expand;
+        expandW.setAttribute("aria-label", T.dock_expand);
         expandW.addEventListener("click", () => {
           setUiCollapsedWatch(false);
           forceRenderDockNow();
@@ -2273,56 +2310,119 @@
         forceRenderDockNow();
       });
 
-      // Header hover toggle button (watch)
-      const headerBtn = makeDockButton(BTN_HEADER, "");
-
-      const updateHeaderLabel = applyToggleHoverState(
-        headerBtn,
-        () => T.dock_header_label,
-        () => getBool(KEY.headerHoverWatch),
-        () => (getBool(KEY.headerHoverWatch) ? T.dock_header_action_on : T.dock_header_action_off)
-      );
-
-      headerBtn.addEventListener("click", () => {
-        const next = !getBool(KEY.headerHoverWatch);
-        setBool(KEY.headerHoverWatch, next);
-        updateHeaderLabel();
-
-        bindHeaderMouse();
-        applyHeaderHoverNow();
-
-        scheduleRun(true);
-        showToast(next ? T.toast_header_on : T.toast_header_off, next ? "on" : "off");
-        registerMenu();
-        forceRenderDockNow();
-      });
-      updateHeaderLabel();
-
-      const lowpopWatchBtn = makeDockButton(BTN_WATCH, "");
-      const updateLowpopWatchLabel = applyToggleHoverState(
-        lowpopWatchBtn,
-        () => T.dock_lowpop_watch_label,
-        () => getBool(KEY.lowpopWatch),
-        () => (getBool(KEY.lowpopWatch) ? T.dock_lowpop_watch_action_on : T.dock_lowpop_watch_action_off)
-      );
-      const syncLowpopWatchLabel = () => {
-        updateLowpopWatchLabel();
-      };
-      lowpopWatchBtn.addEventListener("click", () => {
-        const next = !getBool(KEY.lowpopWatch);
-        setBool(KEY.lowpopWatch, next);
-        if (!next) unhideLowpop();
-        syncLowpopWatchLabel();
-
-        scheduleRun(true);
-        showToast(next ? T.toast_btn_watch_on : T.toast_btn_watch_off, next ? "on" : "off");
-        registerMenu();
-        forceRenderDockNow();
-      });
-      syncLowpopWatchLabel();
+      const rows = [
+        makeToggleRow({
+          actionId: "ytcf-btn-shorts-action",
+          stateId: "ytcf-btn-shorts-state",
+          key: KEY.shortsHome,
+          label: T.dock_shorts_label,
+          actionOn: T.dock_shorts_action_on,
+          actionOff: T.dock_shorts_action_off,
+          infoText: T.dock_shorts_info,
+          onToggle: () => {
+            scheduleRun(true);
+            setTimeout(() => scheduleRun(true), 250);
+            setTimeout(() => scheduleRun(true), 900);
+            setTimeout(() => scheduleRun(true), 1800);
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-news-action",
+          stateId: "ytcf-btn-news-state",
+          key: KEY.newsHome,
+          label: T.dock_news_label,
+          actionOn: T.dock_news_action_on,
+          actionOff: T.dock_news_action_off,
+          infoText: T.dock_news_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-shorts-search-action",
+          stateId: "ytcf-btn-shorts-search-state",
+          key: KEY.shortsSearch,
+          label: T.dock_shorts_search_label,
+          actionOn: T.dock_shorts_search_action_on,
+          actionOff: T.dock_shorts_search_action_off,
+          infoText: T.dock_shorts_search_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-lowpop-home-action",
+          stateId: "ytcf-btn-lowpop-home-state",
+          key: KEY.lowpopHome,
+          label: T.dock_lowpop_home_label,
+          actionOn: T.dock_lowpop_home_action_on,
+          actionOff: T.dock_lowpop_home_action_off,
+          infoText: T.dock_lowpop_home_info,
+          onToggle: (next) => {
+            if (!next) unhideLowpop();
+            scheduleRun(true);
+            showToast(next ? T.toast_btn_home_on : T.toast_btn_home_off, next ? "on" : "off");
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-lowpop-watch-action",
+          stateId: "ytcf-btn-lowpop-watch-state",
+          key: KEY.lowpopWatch,
+          label: T.dock_lowpop_watch_label,
+          actionOn: T.dock_lowpop_watch_action_on,
+          actionOff: T.dock_lowpop_watch_action_off,
+          infoText: T.dock_lowpop_watch_info,
+          onToggle: (next) => {
+            if (!next) unhideLowpop();
+            scheduleRun(true);
+            showToast(next ? T.toast_btn_watch_on : T.toast_btn_watch_off, next ? "on" : "off");
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-header-action",
+          stateId: "ytcf-btn-header-state",
+          key: KEY.headerHoverWatch,
+          label: T.dock_header_label,
+          actionOn: T.dock_header_action_on,
+          actionOff: T.dock_header_action_off,
+          infoText: T.dock_header_info,
+          onToggle: (next) => {
+            bindHeaderMouse();
+            applyHeaderHoverNow();
+            scheduleRun(true);
+            showToast(next ? T.toast_header_on : T.toast_header_off, next ? "on" : "off");
+          },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-sidebar-shorts-action",
+          stateId: "ytcf-btn-sidebar-shorts-state",
+          key: KEY.sidebarShorts,
+          label: T.dock_sidebar_shorts_label,
+          actionOn: T.dock_sidebar_shorts_action_on,
+          actionOff: T.dock_sidebar_shorts_action_off,
+          infoText: T.dock_sidebar_shorts_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-block-shorts-action",
+          stateId: "ytcf-btn-block-shorts-state",
+          key: KEY.blockShortsPage,
+          label: T.dock_block_shorts_label,
+          actionOn: T.dock_block_shorts_action_on,
+          actionOff: T.dock_block_shorts_action_off,
+          infoText: T.dock_block_shorts_info,
+          onToggle: () => { maybeRedirectShortsPage(); scheduleRun(true); },
+        }),
+        makeToggleRow({
+          actionId: "ytcf-btn-float-buttons-action",
+          stateId: "ytcf-btn-float-buttons-state",
+          key: KEY.floatButtons,
+          label: T.dock_float_buttons_label,
+          actionOn: T.dock_float_buttons_action_on,
+          actionOff: T.dock_float_buttons_action_off,
+          infoText: T.dock_float_buttons_info,
+          onToggle: () => { scheduleRun(true); },
+        }),
+      ];
 
       const modeGroup = makeModeStatusGroup();
-      dock.replaceChildren(collapseW, modeGroup, headerBtn, lowpopWatchBtn);
+      dock.replaceChildren(collapseW, modeGroup, ...rows);
       armDockIdle(dock, "watch");
       if (getMode() === "perf") animateDockIn(dock);
       return;
@@ -2538,7 +2638,7 @@
     const modeText = (m === "perf") ? T.mode_perf : (m === "ultra" ? T.mode_ultra : T.mode_eco);
     menuIds.push(GM_registerMenuCommand(`${T.mode_label}: ${modeText}`, () => {
       const cur = getMode();
-      const next = (cur === "perf") ? "eco" : (cur === "eco" ? "ultra" : "perf");
+      const next = (cur === "ultra") ? "eco" : (cur === "eco" ? "perf" : "ultra");
       setMode(next);
       if (next === "perf") showToast(T.toast_mode_perf, "info");
       else if (next === "ultra") showToast(T.toast_mode_ultra, "info");
@@ -2606,7 +2706,6 @@
       lastDockKey = "";
       dockIsHidden = false;
       dockWasFullscreen = false;
-      dockModeMenuOpen = false;
       if (fsRestoreTimer) clearTimeout(fsRestoreTimer);
       fsRestoreTimer = null;
 
@@ -2629,8 +2728,6 @@
     maybeRedirectShortsPage();
     applyMode();
     registerMenu();
-    dockModeMenuOpen = false;
-
     // ✅ keep header in sync with route
     bindHeaderMouse();
     applyHeaderHoverNow();
