@@ -1,84 +1,75 @@
-# YouTube CleanFeed 🇫🇷 🇬🇧 🇩🇪 🇪🇸 🇮🇹 🇵🇹 🇳🇱 🇵🇱 🇹🇷
+# YouTube CleanFeed 🇫🇷 🇬🇧
+
+Clean and declutter the YouTube feed  
+Nettoie et simplifie le flux YouTube
+
+[![Install / Installer YouTube CleanFeed](https://img.shields.io/badge/Install%20%2F%20Installer-YouTube%20CleanFeed-2ea44f?style=for-the-badge&logo=tampermonkey)](https://update.greasyfork.org/scripts/563815/YouTube%20CleanFeed.user.js)
+
+---
 
 ## 🌍 Languages / Langues
-- [Français](#-français)
-- [English](#-english)
-- [Deutsch](docs/README.de.md)
-- [Español](docs/README.es.md)
-- [Italiano](docs/README.it.md)
-- [Português](docs/README.pt.md)
-- [Nederlands](docs/README.nl.md)
-- [Polski](docs/README.pl.md)
-- [Türkçe](docs/README.tr.md)
+
+- [Français](#fr-en)
+- [English](#fr-en)
+- 🇩🇪 Deutsch – docs/README.de.md
+- 🇪🇸 Español – docs/README.es.md
+- 🇮🇹 Italiano – docs/README.it.md
+- 🇵🇹 Português – docs/README.pt.md
+- 🇳🇱 Nederlands – docs/README.nl.md
+- 🇵🇱 Polski – docs/README.pl.md
+- 🇹🇷 Türkçe – docs/README.tr.md
 
 ---
 
-## 🇫🇷 Français
+## ✨ Description <a id="fr-en"></a>
 
-### ✨ Description
-**YouTube CleanFeed** est un userscript Tampermonkey qui masque automatiquement :
-- Shorts (Accueil, Recherche, menu latéral)
-- News / Top stories sur l’accueil
-- vidéos peu populaires (Accueil, /watch, Recherche)
-- option : bloquer la page Shorts (redirection vers Accueil)
+**YouTube CleanFeed** is a Tampermonkey userscript that automatically hides unwanted content on YouTube.  
+**YouTube CleanFeed** est un userscript Tampermonkey qui masque automatiquement les contenus indésirables sur YouTube.
 
-Il fonctionne :
-- sur la **page d’accueil**
-- sur la **recherche**
-- sur les **recommandations** d’une vidéo  
-- avec la navigation **SPA** de YouTube (sans rechargement)
-
-### 🧠 Fonctionnalités
-- Seuil de vues personnalisable (pas rapides + valeur manuelle)
-- Dock flottant avec Collapse/Expand, sous-menus, bouton “Go to top”
-- Auto-hide du header sur /watch (affichage au survol)
-- Modes : Performance, Économie, Ultra Éco
-- Notifications toast et menu Tampermonkey catégorisé
-- Optimisations pour performances et anti-flicker
-
-### ⚙️ Installation
-1. Installer Tampermonkey
-2. Créer un nouveau script
-3. Coller le code du script depuis `usercript.js`
-4. Sauvegarder
-
-### 🧩 Compatibilité
-- Tampermonkey
-- YouTube Desktop
-- Chromium / Firefox
-
----
-
-## 🇬🇧 English
-
-### ✨ Description
-**YouTube CleanFeed** is a Tampermonkey userscript that automatically hides:
-- Shorts (Home, Search, sidebar)
+### It hides / Il masque
+- Shorts (Home / Accueil, Search / Recherche, sidebar)
 - News / Top stories on Home
-- low-popularity videos (Home, /watch, Search)
-- optional: block the Shorts page (redirect to Home)
+- Low-popularity videos
+- Optional: block the Shorts page (redirect to Home)
 
-It works on:
-- the **Home page**
-- **Search**
-- **Watch** recommendations  
-- fully supports YouTube’s **SPA navigation**
+### Works on / Fonctionne sur
+- Home page / Page d’accueil
+- Search / Recherche
+- Watch recommendations
+- YouTube SPA navigation (no reload / sans rechargement)
 
-### 🧠 Features
-- Customizable view threshold (quick steps + manual input)
-- Floating dock with Collapse/Expand, submenus, “Go to top” button
-- Header auto-hide on /watch (reveal on hover)
-- Modes: Performance, Saver, Ultra Saver
-- Toast notifications and categorized Tampermonkey menu
+---
+
+## 🧠 Features / Fonctionnalités
+
+- Customizable view threshold  
+- Floating control dock (collapse / expand)
+- Performance modes (Performance / Saver / Ultra Saver)
+- Auto-hide header on watch pages
+- Toast notifications
 - Performance and anti-flicker optimizations
 
-### ⚙️ Installation
+---
+
+## ⚙️ Installation
+
+### Recommended / Recommandée
+1. Install **Tampermonkey**
+2. Click / Cliquez :  
+   👉 **Install / Installer YouTube CleanFeed**
+3. The script installs automatically
+4. Open YouTube and adjust settings if needed
+
+### Manual (optional) / Manuelle (optionnel)
 1. Install Tampermonkey
 2. Create a new userscript
-3. Paste the script from `usercript.js`
+3. Paste the code from `usercript.js`
 4. Save
 
-### 🧩 Compatibility
+---
+
+## 🧩 Compatibility
+
 - Tampermonkey
 - YouTube Desktop
-- Chromium / Firefox
+- Chromium & Firefox
