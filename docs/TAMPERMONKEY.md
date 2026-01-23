@@ -1,49 +1,63 @@
-# YouTube CleanFeed
+<h1>YouTube CleanFeed</h1>
 
+<p>
 🇫🇷 / 🇬🇧 Tampermonkey userscript to clean the YouTube feed.
+</p>
 
----
+<hr>
 
-## Description / Description
+<h2>Description / Description</h2>
 
-**YouTube CleanFeed** is a Tampermonkey userscript that hides unwanted content on YouTube.  
-**YouTube CleanFeed** est un userscript Tampermonkey qui nettoie automatiquement YouTube.
+<p>
+<strong>YouTube CleanFeed</strong> is a Tampermonkey userscript that hides unwanted content on YouTube.<br>
+<strong>YouTube CleanFeed</strong> est un userscript Tampermonkey qui nettoie automatiquement YouTube.
+</p>
 
-It hides / Il masque :
-- Shorts (Home, Search, sidebar)
-- News / Top stories on Home
-- Low-view / low-popularity videos
-- Optional: block Shorts page (redirect to Home)
+<p><strong>It hides / Il masque :</strong></p>
+<ul>
+  <li>Shorts (Home, Search, sidebar)</li>
+  <li>News / Top stories on Home</li>
+  <li>Low-view / low-popularity videos</li>
+  <li>Optional: block Shorts page (redirect to Home)</li>
+</ul>
 
-Works on / Fonctionne sur :
-- Home page / Page d’accueil
-- Search / Recherche
-- Watch recommendations
-- YouTube SPA navigation (no reload)
+<p><strong>Works on / Fonctionne sur :</strong></p>
+<ul>
+  <li>Home page / Page d’accueil</li>
+  <li>Search / Recherche</li>
+  <li>Watch recommendations</li>
+  <li>YouTube SPA navigation (no reload)</li>
+</ul>
 
----
+<hr>
 
-## Features / Fonctionnalités
+<h2>Features / Fonctionnalités</h2>
 
-- Custom view threshold / Seuil de vues personnalisable
-- Floating control dock (collapse / expand)
-- Performance modes (Performance / Saver / Ultra Saver)
-- Auto-hide header on watch page
-- Toast notifications
-- Optimized for performance and anti-flicker
+<ul>
+  <li>Custom view threshold / Seuil de vues personnalisable</li>
+  <li>Floating control dock (collapse / expand)</li>
+  <li>Performance modes (Performance / Saver / Ultra Saver)</li>
+  <li>Auto-hide header on watch page</li>
+  <li>Toast notifications</li>
+  <li>Optimized for performance and anti-flicker</li>
+</ul>
 
----
+<hr>
 
-## Installation
+<h2>Installation</h2>
 
-1. Install **Tampermonkey**
-2. Install this script from GreasyFork
-3. Open YouTube and adjust settings if needed
+<ol>
+  <li>Install <strong>Tampermonkey</strong></li>
+  <li>Install this script from GreasyFork</li>
+  <li>Open YouTube and adjust settings if needed</li>
+</ol>
 
----
+<hr>
 
-## Compatibility
+<h2>Compatibility</h2>
 
-- Tampermonkey
-- YouTube Desktop
-- Chromium & Firefox
+<ul>
+  <li>Tampermonkey</li>
+  <li>YouTube Desktop</li>
+  <li>Chromium &amp; Firefox</li>
+</ul>
